@@ -1,0 +1,41 @@
+= Архитектурный дизайн ПО симулятора РЛС
+
+:default-srs-upstream: -
+include::snippets.adoc[tag=srs-attribs-default]
+
+:last-update-label!:
+
+:toc:
+:toc-title: Оглавление
+
+== Контекст
+
+include::context.adoc[]
+
+== Контейнеры
+
+include::containers.adoc[]
+
+== Компоненты
+
+include::components.adoc[]
+
+== Код
+
+include::code.adoc[]
+
+== Динамическое поведение
+
+include::runtime.adoc[]
+
+== Архитектурные решения
+
+include::adr.adoc[]
+
+== Нефункциональные требования
+
+include::nfr.adoc[]
+
+== Приложение
+
+include::appendix.adoc[]

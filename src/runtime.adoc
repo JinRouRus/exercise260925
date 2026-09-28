@@ -1,0 +1,7 @@
+=== Схема состояний ПО
+
+.Схема состояний ПО
+image::../out/src/diags/state-machine.png[]
+
+.Схема состояний тренировки
+image::../out/src/diags/state-machine-training.png[]

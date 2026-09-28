@@ -1,0 +1,82 @@
+===== С1.6.1 Подмодуль генерации объектов
+
+include::components-c161.adoc[]
+
+===== С1.6.2 Подмодуль настроек
+
+[[SWRS-xxx-modsim-smodset-generic]]
+.SWRS-xxx-modsim-smodset-generic
+--
+:srs-upstream: BRS33200-controllist, BRS33210-controlsettings
+include::snippets.adoc[tag=srs-attribs]
+Подмодуль настроек должен предоставлять кнопку вызова меню настроек симуляции.
+
+--
+
+[[SWRS-xxx-modsim-smodset-basis]]
+.SWRS-xxx-modsim-smodset-basis
+--
+:srs-upstream: BRS33200-controllist, BRS33210-controlsettings
+include::snippets.adoc[tag=srs-attribs]
+При нажатии на кнопку вызова меню настроек симуляции подмодуль настроек должен отобразить окно со списком настроек симуляции.
+
+--
+
+Список настроек включает в себя настройки для подмодулей:
+
+* С1.5.2 Подмодуль колец
+* С1.5.3 Подмодуль зон
+* С1.5.5 Подмодуль управления
+* С1.5.4 Подмодуль объектов
+* С1.6.1 Подмодуль генерации объектов
+
+===== С1.6.3 Подмодуль управления
+
+
+[[SWRS-xxx-modsim-smodctrl-generic]]
+.SWRS-xxx-modsim-smodctrl-generic
+--
+:srs-upstream: BRS33200-controllist, BRS33230-controlpause
+include::snippets.adoc[tag=srs-attribs]
+Подмодуль управления должен предоставлять панель паузы с взаимно исключаемыми (не могут быть доступны одновременно) кнопками "Пауза" и "Продолжить".
+
+--
+
+[[SWRS-xxx-modsim-smodctrl-pause]]
+.SWRS-xxx-modsim-smodctrl-pause
+--
+:srs-upstream: BRS33230-controlpause
+include::snippets.adoc[tag=srs-attribs]
+Подмодуль управления должен предоставлять панель паузы с кнопкой "Пауза" для приостановки симуляции.
+
+--
+
+[[SWRS-xxx-modsim-smodctrl-resume]]
+.SWRS-xxx-modsim-smodctrl-resume
+--
+:srs-upstream: BRS33230-controlpause
+include::snippets.adoc[tag=srs-attribs]
+Подмодуль управления должен предоставлять панель паузы с кнопкой "Продолжить" для возобновления симуляции.
+
+--
+
+
+===== С1.6.4 Подмодуль уведомлений
+
+[[SWRS-xxx-modsim-smodntfy-generic]]
+.SWRS-xxx-modsim-smodntfy-generic
+--
+:srs-upstream: BRS33200-controllist, BRS33220-controlnotify
+include::snippets.adoc[tag=srs-attribs]
+Подмодуль уведомлений должен предоставлять кнопку вызова меню центра уведомлений.
+
+--
+
+[[SWRS-xxx-modsim-smodntfy-basis]]
+.SWRS-xxx-modsim-smodntfy-basis
+--
+:srs-upstream: BRS33220-controlnotify
+include::snippets.adoc[tag=srs-attribs]
+При нажатии на кнопку вызова центра уведомлений подмодуль уведомлений должен отобразить окно со списком уведомлений, зарегистрированных на основании настроек подмодуля зон (C1.5.3).
+
+--

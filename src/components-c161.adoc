@@ -1,0 +1,86 @@
+
+NOTE: ПМГО - подмодуль генерации объектов
+
+[[SWRS-xxx-modsim-smodgen-startup]]
+.SWRS-xxx-modsim-smodgen-startup
+--
+:srs-upstream: BRS33000-trainingmode, BRS33141-objstartup
+include::snippets.adoc[tag=srs-attribs]
+ПМГО должен после заупска режима тренировки сгенерировать объекты в произвольном количестве, но не не более лимита (SWRS-xxx-modmap-smodobj-settings-limits).
+
+--
+
+[[SWRS-xxx-modsim-smodgen-types]]
+.SWRS-xxx-modsim-smodgen-types
+--
+:srs-upstream: BRS33144-objtypes
+include::snippets.adoc[tag=srs-attribs]
+ПМГО должен предоставлять возможность генерировать объекты двух типов: БВС и птица.
+
+--
+
+Алгоритмы генерации и изменения параметров объектов, согласно их типах, определены в BRS33144-objtypes.
+
+Параметры объектов:
+
+* тип
+* позиция
+* скорость
+* направление
+* время "жизни"
+* статус взаимодействия
+
+[[SWRS-xxx-modsim-smodgen-process1]]
+.SWRS-xxx-modsim-smodgen-process1
+--
+include::snippets.adoc[tag=srs-attribs]
+ПМГО должен с постоянной цикличностью обновлять параметры объектов, согласно их типам,  включая:
+
+* изменение параметров
+* удаление объекта согласно алгоритму
+* произвольное удаление объекта
+* произвольная генерация новых объектов, если не достигнут предел (SWRS-xxx-modmap-smodobj-settings-limits)
+
+--
+[[SWRS-xxx-modsim-smodgen-process2]]
+.SWRS-xxx-modsim-smodgen-process2
+--
+include::snippets.adoc[tag=srs-attribs]
+
+ПМГО должен принимать события от подмодуля объектов (С1.5.4).
+--
+
+[[SWRS-xxx-modsim-smodgen-process3]]
+.SWRS-xxx-modsim-smodgen-process3
+--
+include::snippets.adoc[tag=srs-attribs]
+После получения события ПМГО должен соответственно типу объекта обновить статус объекта.
+--
+
+[[SWRS-xxx-modsim-smodgen-process4]]
+.SWRS-xxx-modsim-smodgen-process4
+--
+include::snippets.adoc[tag=srs-attribs]
+При обновлении статуса объекта ПМГО должен статистику текущего сеанса тренировки
+--
+
+[[SWRS-xxx-modsim-smodgen-process5]]
+.SWRS-xxx-modsim-smodgen-process5
+--
+include::snippets.adoc[tag=srs-attribs]
+ПМГО должен приостанавливать/возобновлять циклическое обновление объектов на основании сигналов подмодуля управления (С1.6.3)
+--
+
+[[SWRS-xxx-modsim-smodgen-process6]]
+.SWRS-xxx-modsim-smodgen-process6
+--
+include::snippets.adoc[tag=srs-attribs]
+По окончанию времени тренировки ПМГО должен прекратить цикл обновления объектов.
+--
+
+[[SWRS-xxx-modsim-smodgen-process7]]
+.SWRS-xxx-modsim-smodgen-process7
+--
+include::snippets.adoc[tag=srs-attribs]
+По окончанию времени тренировки ПМГО должен отобразить и передать управление модулю истории, передав в модуль результаты текущего сеанса.
+--

@@ -1,0 +1,259 @@
+===== С1.5.1 Подмодуль карты местности
+
+[[SWRS-xxx-modmap-smodmap-generic]]
+.SWRS-xxx-modmap-smodmap-generic
+--
+:srs-upstream: BRS33100-modulemapdesc, BRS33110-mapdesc
+include::snippets.adoc[tag=srs-attribs]
+Подмодуль карты местности должен отображать географическую основу визуализации.
+
+--
+
+[[SWRS-xxx-modmap-smodmap-control]]
+.SWRS-xxx-modmap-smodmap-control
+--
+:srs-upstream: BRS33110-mapdesc
+include::snippets.adoc[tag=srs-attribs]
+Подмодуль карты местности должен предоставлять возможность изменения позиции обзора карты, включая:
+
+* масштабирование
+* перемещения центра обзора
+
+--
+
+
+[[SWRS-xxx-modmap-smodmap-settings]]
+.SWRS-xxx-modmap-smodmap-settings
+--
+:srs-upstream: -
+include::snippets.adoc[tag=srs-attribs]
+Подмодуль карты местности должен реализовывать визуализацию с учётом базовых настроек ПО.
+
+--
+
+===== С1.5.2 Подмодуль колец
+
+
+[[SWRS-xxx-modmap-smodradar-generic]]
+.SWRS-xxx-modmap-smodradar-generic
+--
+:srs-upstream: BRS33100-modulemapdesc, BRS33120-mapradarcircles
+include::snippets.adoc[tag=srs-attribs]
+Подмодуль колец должен отображать радарные кольца поверх визуализации подмодуля карты местности.
+
+--
+
+[[SWRS-xxx-modmap-smodradar-types]]
+.SWRS-xxx-modmap-smodradar-types
+--
+:srs-upstream: BRS33120-mapradarcircles
+include::snippets.adoc[tag=srs-attribs]
+Подмодуль колец должен отображать три радарных кольца для близкой, средней и дальней дистанции.
+
+--
+
+[[SWRS-xxx-modmap-smodradar-settings1]]
+.SWRS-xxx-modmap-smodradar-settings1
+--
+:srs-upstream: ADR-002-radar-circles
+include::snippets.adoc[tag=srs-attribs]
+Подмодуль колец должен отображать три радарных кольца для дистанций заданных в настройках симуляции.
+
+--
+
+[[SWRS-xxx-modmap-smodradar-settings1-default]]
+.SWRS-xxx-modmap-smodradar-settings1-default
+--
+:srs-upstream: BRS33120-mapradarcircles
+include::snippets.adoc[tag=srs-attribs]
+Подмодуль колец должен следующие значения дистанций по умолчанию:
+
+* Близкая - 1000 метров
+* Средняя - 3000 метров
+* Дальняя - 7000 метров
+
+--
+
+[[SWRS-xxx-modmap-smodradar-settings2]]
+.SWRS-xxx-modmap-smodradar-settings2
+--
+:srs-upstream: -
+include::snippets.adoc[tag=srs-attribs]
+Подмодуль колец должен отображать три радарных кольца разным цветом, заданным в настройках симуляции.
+
+--
+
+===== С1.5.3 Подмодуль зон
+
+[[SWRS-xxx-modmap-smodzones-types]]
+.SWRS-xxx-modmap-smodzones-types
+--
+:srs-upstream: BRS33100-modulemapdesc, BRS33130-mapzones
+include::snippets.adoc[tag=srs-attribs]
+Подмодуль зон должен отображать два типа зон поверх визуализации подмодуля карты местности и подмодуля радарных колец:
+
+* Зона обнаружения
+* Зона игнорирования
+
+--
+
+Описание зон обнаружения и игнорирования дано в BRS33100-modulemapdesc.
+
+[[SWRS-xxx-modmap-smodzones-settings]]
+.SWRS-xxx-modmap-smodzones-settings
+--
+:srs-upstream: BRS33100-modulemapdesc, BRS33130-mapzones
+include::snippets.adoc[tag=srs-attribs]
+Подмодуль зон должен отображать зоны согласно настройкам симуляции.
+
+--
+
+===== С1.5.4 Подмодуль объектов
+
+[[SWRS-xxx-modmap-smodobj-shape]]
+.SWRS-xxx-modmap-smodobj-shape
+--
+:srs-upstream: BRS33100-modulemapdesc, BRS33142-objview
+include::snippets.adoc[tag=srs-attribs]
+Подмодуль объектов должен отображать симулированые объекты в виде точек.
+
+--
+
+[[SWRS-xxx-modmap-smodobj-settings]]
+.SWRS-xxx-modmap-smodobj-settings
+--
+:srs-upstream: BRS33100-modulemapdesc, BRS33142-objview
+include::snippets.adoc[tag=srs-attribs]
+Подмодуль объектов должен отображать направление движения и траекторию объекта, согласно настройкам симуляции.
+
+--
+
+[[SWRS-xxx-modmap-smodobj-settings-limits]]
+.SWRS-xxx-modmap-smodobj-settings-limits
+--
+:srs-upstream: ADR-003-objects-limits
+include::snippets.adoc[tag=srs-attribs]
+Подмодуль объектов должен одновременно отображать не более предельного количества объектов, заданного в настройках симуляции.
+
+--
+
+[[SWRS-xxx-modmap-smodobj-settings-limits-default]]
+.SWRS-xxx-modmap-smodobj-settings-limits-default
+--
+:srs-upstream: BRS33142-objview
+include::snippets.adoc[tag=srs-attribs]
+Подмодуль объектов должен использовать по умолчанию предельное количество объектов равное 20.
+
+--
+
+[[SWRS-xxx-modmap-smodobj-objattr]]
+.SWRS-xxx-modmap-smodobj-objattr
+--
+:srs-upstream: BRS33145-objattr
+include::snippets.adoc[tag=srs-attribs]
+При наведении курсора мыши на объект, подмодуль объектов должен отображать следующую информацию об объекте:
+
+* скорость движения
+* долгота
+* широта
+
+--
+
+На основании ADR-004-objects-colors. Подмодуль объектов с помощью цвета отображают статус объекта:
+
+* серый - объект, с которым пользователь не взаимодействовал
+* синий - объект, с которым пользователь взаимодействовал
+* зеленый - объект, с которым пользователь взаимодействовал и который модулем симуляции (С1.6) подтвержен как БВС
+* красный - объект, с которым пользователь взаимодействовал и который модулем симуляции (С1.6) не подтвержен как БВС
+
+.Схема цветовой индикации объектов
+image::../out/src/diags/state-machine-color-obj.png[]
+
+[[SWRS-xxx-modmap-smodobj-simulation1]]
+.SWRS-xxx-modmap-smodobj-simulation1
+--
+:srs-upstream: BRS33000-trainingmode
+include::snippets.adoc[tag=srs-attribs]
+Подмодуль объектов должен обновлять визуализацию объектов учетом параметров, включая положение, направление и скорость, объектов согласно данным модуля симуляции (С1.6).
+
+--
+
+[[SWRS-xxx-modmap-smodobj-simulation2]]
+.SWRS-xxx-modmap-smodobj-simulation2
+--
+:srs-upstream: BRS33000-trainingmode
+include::snippets.adoc[tag=srs-attribs]
+Подмодуль объектов должен обновлять визуализацию цвета объектов согласно данным модуля симуляции (С1.6).
+
+--
+
+[[SWRS-xxx-modmap-smodobj-simulation3]]
+.SWRS-xxx-modmap-smodobj-simulation3
+--
+:srs-upstream: BRS33000-trainingmode
+include::snippets.adoc[tag=srs-attribs]
+Подмодуль объектов должен форматировать траекторию объектов на основании получаемых данных от модуля симуляции (С1.6).
+
+--
+
+[[SWRS-xxx-modmap-smodobj-training]]
+.SWRS-xxx-modmap-smodobj-training
+--
+:srs-upstream: BRS33000-trainingmode
+include::snippets.adoc[tag=srs-attribs]
+Подмодуль объектов должен обеспечить интерактивное взаимодействие с визуализированным объектом. При двойном нажатии ЛКМ передать в С1.6. модуль симуляции событие.
+
+--
+
+
+===== С1.5.5 Подмодуль управления
+
+[[SWRS-xxx-modmap-smodctrl-controlviews]]
+.SWRS-xxx-modmap-smodctrl-controlviews
+--
+:srs-upstream: BRS33250-controlviews
+include::snippets.adoc[tag=srs-attribs]
+Подмодуль управления должен предоставлять панель позиции для быстрого переключения перспективы карты.
+
+--
+
+[[SWRS-xxx-modmap-smodctrl-controlviews-home]]
+.SWRS-xxx-modmap-smodctrl-controlviews-home
+--
+:srs-upstream: BRS33250-controlviews
+include::snippets.adoc[tag=srs-attribs]
+Подмодуль управления должен предоставлять на панели позиции интерактивную иконку "Дом". Параметры перспективы для иконки "Дом" задаются в настройках.
+
+--
+
+[[SWRS-xxx-modmap-smodctrl-controlcompass]]
+.SWRS-xxx-modmap-smodctrl-controlcompass
+--
+:srs-upstream: BRS33260-controlcompass
+include::snippets.adoc[tag=srs-attribs]
+Подмодуль управления должен предоставлять панель компаса.
+
+--
+
+[[SWRS-xxx-modmap-smodctrl-controlcompass-interact]]
+.SWRS-xxx-modmap-smodctrl-controlcompass-interact
+--
+:srs-upstream: BRS33260-controlcompass
+include::snippets.adoc[tag=srs-attribs]
+При нажатии ЛКМ на панель компаса, подмодуль управления должен изменить ориентацию отображения карты на ориентацию "север вверху".
+
+--
+
+
+===== С1.5.6 Подмодуль даты/времени
+
+[[SWRS-xxx-modmap-smoddate]]
+.SWRS-xxx-modmap-smoddate
+--
+:srs-upstream: BRS33240-controldate
+include::snippets.adoc[tag=srs-attribs]
+Подмодуль даты/времени должен отображать неинтерактивную панель с текущей датой и временем.
+
+--
+
+

@@ -1,0 +1,22 @@
+//tag::brs-attribs[]
+**Источник**: регламент +
+**Статус**: согласовано +
+**Дата статуса**: 2025г +
+**Приоритет**: высокий +
+**Верификация**: приемо-сдаточные испытания
+
+//end::brs-attribs[]
+
+//tag::srs-attribs-default[]
+:srs-upstream: {default-srs-upstream}
+//end::srs-attribs-default[]
+
+//tag::srs-attribs[]
+**Источник**: {srs-upstream} +
+**Статус**: согласовано +
+**Дата статуса**: 2026-09-27 +
+**Приоритет**: средний +
+**Верификация**: не определено
+
+include::snippets.adoc[tag=srs-attribs-default]
+//end::srs-attribs[]

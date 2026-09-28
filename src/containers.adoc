@@ -1,0 +1,72 @@
+NOTE: Контейнерами в данном разделе и далее называеются логические элементы проектируемого ПО.
+
+
+[[SRS-001-containers-gui]]
+.SRS-001-containers-gui
+--
+:srs-upstream: BRS31100-listfunc, BRS32200-mainmenu
+include::snippets.adoc[tag=srs-attribs]
+ПО должно предоставлять графический пользовательский интерфейс.
+--
+[[SRS-002-containers-db]]
+.SRS-002-containers-db
+--
+:srs-upstream: BRS31100-listfunc, BRS32100-auth, BRS32200-mainmenu
+include::snippets.adoc[tag=srs-attribs]
+ПО должно взаимодействовать с базой данных для хранения данных между запусками.
+--
+
+.Контейнеры ПО
+image::../out/src/diags/containers.png[]
+
+=== Контейнер "Приложение"
+
+Приложение обеспечивает основную бизнес логику ПО.
+
+[[SRS-003-cont-gui-auth]]
+.SRS-003-cont-gui-auth
+--
+:srs-upstream: BRS32100-auth
+include::snippets.adoc[tag=srs-attribs]
+Приложение должно предоставлять форму для авторизации пользователя при запуске.
+--
+
+[[SRS-004-cont-gui-mainmenu]]
+.SRS-004-cont-gui-mainmenu
+--
+:srs-upstream: BRS32200-mainmenu
+include::snippets.adoc[tag=srs-attribs]
+После авторизации приложение должно предоставлять пользователю главное меню.
+--
+
+[[SRS-005-cont-gui-modes]]
+.SRS-005-cont-gui-modes
+--
+:srs-upstream: BRS32200-mainmenu
+include::snippets.adoc[tag=srs-attribs]
+Приложение должно обеспечивать три режима работы, выбираемые в главном меню:
+
+* Режим «Тренировка»
+* Профиль
+* Настройки
+
+--
+
+=== Контейнер "База данных"
+
+База данных представляем собой релятивистскую БД. Содержит данные, необходимые для работы ПО, сохраняемые между запусками ПО.
+
+
+[[SRS-006-cont-db-data]]
+.SRS-006-cont-db-data
+--
+:srs-upstream: BRS32100-auth, BRS32200-mainmenu, BRS33300-auth
+include::snippets.adoc[tag=srs-attribs]
+База данных должна обеспечить хранение:
+
+* Информации об аккаунтах
+* Историю тренировок
+* Статистику тренировок
+* Настройки ПО
+
+--

@@ -1,0 +1,69 @@
+=== База данных
+
+[[SWRS-xxx-db-accounts]]
+.SWRS-xxx-db-accounts
+--
+:srs-upstream: SRS-006-cont-db-data
+include::snippets.adoc[tag=srs-attribs]
+База данных должна содержать таблицу аккаунтов ПО со следующими полями:
+
+* id_account [unique, key]
+* login
+* hash_pwd
+* role
+* details_json
+
+--
+
+Поле "role" может принимать два значения:
+
+* regular - для пользователей без привилегий администратора.
+* admin - для пользователей с привилегиями администратора.
+
+Поле "details_json" содержит детализированную информацию о пользователе.
+
+[[SWRS-xxx-db-history]]
+.SWRS-xxx-db-history
+--
+:srs-upstream: SRS-006-cont-db-data
+include::snippets.adoc[tag=srs-attribs]
+База данных должна содержать таблицу истории тренировок со следующими полями:
+
+* id_record [unique, key]
+* id_account
+* timestamp
+* details_json
+
+--
+
+Поле "details_json" содержит детализированную информацию о тренировке.
+
+[[SWRS-xxx-db-settings]]
+.SWRS-xxx-db-settings
+--
+:srs-upstream: SRS-006-cont-db-data
+include::snippets.adoc[tag=srs-attribs]
+База данных должна содержать таблицу настроек со следующими полями:
+
+* id_setting [unique, key]
+* value
+
+--
+
+Список настроек фиксированный. 
+
+WARNING: TBD
+
+[[SWRS-xxx-db-events]]
+.SWRS-xxx-db-events
+--
+:srs-upstream: SRS-006-cont-db-data
+include::snippets.adoc[tag=srs-attribs]
+База данных должна содержать таблицу архива событий со следующими полями:
+
+* id_event [unique, key]
+* timestamp
+* screenshot_path
+* details_json
+
+--

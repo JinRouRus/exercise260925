@@ -1,0 +1,211 @@
+=== Приложение
+
+.Ключевые компоненты (модули) приложения
+image::../out/src/diags/c1-components.png[]
+
+==== С1.1. Модуль авторизации
+
+[[SWRS-xxx-modauth-startup-sw]]
+.SWRS-xxx-modauth-startup-sw
+--
+:srs-upstream: BRS33300-auth
+include::snippets.adoc[tag=srs-attribs]
+Модуль авторизации должен выводить диалог авторизации при запуске приложения.
+
+--
+
+[[SWRS-xxx-modauth-login-pwd]]
+.SWRS-xxx-modauth-login-pwd
+--
+:srs-upstream: BRS33300-auth
+include::snippets.adoc[tag=srs-attribs]
+Модуль авторизации должен обеспечивать авторизацию, используя пары логин-пароль, соотнося их с данными об аккаунтах из базы данных.
+
+--
+
+[[SWRS-xxx-modauth-unsuccess-notify]]
+.SWRS-xxx-modauth-unsuccess-notify
+--
+include::snippets.adoc[tag=srs-attribs]
+Модуль авторизации должен выводить сообщение об ошибке в случае неверно введенной пары логин-пароль.
+
+--
+
+[[SWRS-xxx-modauth-unsuccess-process]]
+.SWRS-xxx-modauth-unsuccess-process
+--
+include::snippets.adoc[tag=srs-attribs]
+Модуль авторизации должен продолжать запрашивать пару логин-пароль в случае неверно введенной пары логин-пароль.
+
+--
+
+
+[[SWRS-xxx-modauth-success-process]]
+.SWRS-xxx-modauth-success-process
+--
+include::snippets.adoc[tag=srs-attribs]
+Модуль авторизации должен передать управление модулю главного меню в случае верно введенной пары логин-пароль.
+
+--
+
+[[SWRS-xxx-modauth-first-admin]]
+.SWRS-xxx-modauth-first-admin
+--
+:srs-upstream: ADR-001-first-admin
+include::snippets.adoc[tag=srs-attribs]
+При отсутствии записей об аккаунтах, модуль авторизации должен создать аккаунт пользователя с привилегиями администратора после первой введенной пары логин-пароль.
+
+--
+
+==== С1.2. Модуль профиля
+
+[[SWRS-xxx-modaccount-info]]
+.SWRS-xxx-modaccount-info
+--
+:srs-upstream: SRS-006-cont-db-data
+include::snippets.adoc[tag=srs-attribs]
+Модуль профиля должен отображать информацию об аккаунте.
+
+--
+
+[[SWRS-xxx-modaccount-histoy]]
+.SWRS-xxx-modaccount-history
+--
+:srs-upstream: SRS-006-cont-db-data
+include::snippets.adoc[tag=srs-attribs]
+При выборе соответствующей управляющей опции, модуль профиля должен передавать управление модулю истории.
+
+--
+
+[[SWRS-xxx-modaccount-pwd]]
+.SWRS-xxx-modaccount-pwd
+--
+:srs-upstream: SRS-006-cont-db-data
+include::snippets.adoc[tag=srs-attribs]
+Модуль профиля должен предоставлять возможность смены пароля текущего аккаунта.
+
+--
+
+[[SWRS-xxx-modaccount-logout]]
+.SWRS-xxx-modaccount-logout
+--
+:srs-upstream: SRS-006-cont-db-data
+include::snippets.adoc[tag=srs-attribs]
+Модуль профиля должен предоставлять возможность выхода из аккаунта.
+
+--
+
+[[SWRS-xxx-modaccount-logout-process]]
+.SWRS-xxx-modaccount-logout-process
+--
+:srs-upstream: SRS-006-cont-db-data
+include::snippets.adoc[tag=srs-attribs]
+При выходе из аккаунта, модуль профиля должен передавать управление модулю авторизации.
+
+--
+
+==== С1.3. Модуль настроек
+
+[[SWRS-xxx-modsettings-basic]]
+.SWRS-xxx-modsettings-basic
+--
+:srs-upstream: SRS-006-cont-db-data
+include::snippets.adoc[tag=srs-attribs]
+Модуль настроек должен предоставлять возможность управления базовыми настройками - графика, громкость звука и др..
+
+--
+
+[[SWRS-xxx-modsettings-accounts]]
+.SWRS-xxx-modsettings-accounts
+--
+:srs-upstream: SRS-006-cont-db-data
+include::snippets.adoc[tag=srs-attribs]
+При уровне привилегий аккаунта роли администратора, модуль настроек должен предоставлять возможность управления аккаунтами, включая создание, удаление и изменение привилегий.
+
+--
+
+
+[[SWRS-xxx-modsettings-db]]
+.SWRS-xxx-modsettings-db
+--
+:srs-upstream: SRS-006-cont-db-data
+include::snippets.adoc[tag=srs-attribs]
+Модуль настроек должен синхронизировать настройки с базой данных.
+
+--
+
+==== С1.4. Модуль истории
+
+[[SWRS-xxx-modhistory-list]]
+.SWRS-xxx-modhistory-list
+--
+:srs-upstream: SRS-006-cont-db-data
+include::snippets.adoc[tag=srs-attribs]
+Модуль истории должен предоставлять список ранее пройденных тренировок, соотнесенных текущему аккаунту.
+
+--
+
+[[SWRS-xxx-modhistory-details]]
+.SWRS-xxx-modhistory-details
+--
+:srs-upstream: SRS-006-cont-db-data
+include::snippets.adoc[tag=srs-attribs]
+Модуль истории должен отображать статистику по выбранной тренировке.
+
+--
+
+==== С1.5. Модуль карты
+
+Модуль карты предназначен для визуализации текущей информации о симуляции.
+
+Для реализации модуля предполагается разбитей его на функциональные подмодули.
+
+include::components-c15.adoc[]
+
+==== С1.6. Модуль симуляции
+
+Модуль симуляции предназначен для генерации обнаруженных симулированных объектов, имитации работы РЛС и проведения процесса тренировки..
+
+Для реализации модуля предполагается разбитей его на функциональные подмодули.
+
+include::components-c16.adoc[]
+
+==== С1.7 Модуль главного меню
+
+
+[[SWRS-xxx-modmainmenu-control]]
+.SWRS-xxx-modmainmenu-control
+--
+:srs-upstream: SRS-005-cont-gui-modes
+include::snippets.adoc[tag=srs-attribs]
+Модуль главного меню должен предоставить выбора режима работы ПО:
+
+* Тренировка
+* Профиль
+* Настройки
+
+--
+
+[[SWRS-xxx-modmainmenu-process]]
+.SWRS-xxx-modmainmenu-process
+--
+:srs-upstream: SRS-005-cont-gui-modes
+include::snippets.adoc[tag=srs-attribs]
+При выборе режима работы ПО, модуль главного меню должен передать управление соответствующему модулю.
+
+--
+
+==== С1.8 Модуль событий
+
+BRS31100-listfunc
+[[SWRS-xxx-modevent-generic]]
+.SWRS-xxx-modevent-generic
+--
+:srs-upstream: BRS31100-listfunc
+include::snippets.adoc[tag=srs-attribs]
+При выборе режима работы ПО, модуль главного меню должен передать управление соответствующему модулю.
+Модуль событий должен предоставлять архив событий, позволяющий делать снимок экрана ПО при обнаружении тревожных событий.
+
+--
+
+WARNING: TBD
