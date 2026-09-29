@@ -31,10 +31,15 @@ keyboard - SW
 
 @startuml containers
 
-component "С1. Приложение" as sw <<GUI>>
+component "С1. Приложение" as sw <<GUI>> {
+    component "C1a. Frontend" as front <<TypeScript>>
+    component "C1b. Backend" as  back <<Rust>>
+
+    front <-> back : IPC
+}
 database "С2. База данных" as db
 
-sw <-> db : SQL
+back <-> db : SQL
 
 @enduml
 

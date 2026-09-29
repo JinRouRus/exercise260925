@@ -1,0 +1,25 @@
+:default-srs-upstream: -
+include::src/snippets.adoc[tag=srs-attribs-default]
+
+[[srs-000]]
+.srs-000
+--
+include::src/snippets.adoc[tag=srs-attribs]
+Тело требования srs-000. Исползуя неинициализрованые аттрибуты.
+--
+
+[[srs-001]]
+.srs-001
+--
+:srs-upstream: brs-001
+include::src/snippets.adoc[tag=srs-attribs]
+Тело требования srs-001. Исползую правильные глобальные аттрибуты.
+--
+
+
+[[srs-002]]
+.srs-002
+--
+include::src/snippets.adoc[tag=srs-attribs]
+Тело требования srs-002. В случае если забыл задать аттрибуты, будут дефолтные значения.
+--

@@ -140,7 +140,7 @@ include::snippets.adoc[tag=srs-attribs]
 [[SWRS-xxx-modmap-smodobj-settings-limits-default]]
 .SWRS-xxx-modmap-smodobj-settings-limits-default
 --
-:srs-upstream: BRS33142-objview
+:srs-upstream: BRS33143-objlimits
 include::snippets.adoc[tag=srs-attribs]
 Подмодуль объектов должен использовать по умолчанию предельное количество объектов равное 20.
 
