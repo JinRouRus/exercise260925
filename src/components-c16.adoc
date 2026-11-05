@@ -4,8 +4,8 @@ include::components-c161.adoc[]
 
 ===== С1.6.2 Подмодуль настроек
 
-[[SWRS-xxx-modsim-smodset-generic]]
-.SWRS-xxx-modsim-smodset-generic
+[[SWRS-056-modsim-smodset-generic]]
+.SWRS-056-modsim-smodset-generic
 --
 :srs-upstream: BRS33200-controllist, BRS33210-controlsettings
 include::snippets.adoc[tag=srs-attribs]
@@ -13,8 +13,8 @@ include::snippets.adoc[tag=srs-attribs]
 
 --
 
-[[SWRS-xxx-modsim-smodset-basis]]
-.SWRS-xxx-modsim-smodset-basis
+[[SWRS-057-modsim-smodset-basis]]
+.SWRS-057-modsim-smodset-basis
 --
 :srs-upstream: BRS33200-controllist, BRS33210-controlsettings
 include::snippets.adoc[tag=srs-attribs]
@@ -33,8 +33,8 @@ include::snippets.adoc[tag=srs-attribs]
 ===== С1.6.3 Подмодуль управления
 
 
-[[SWRS-xxx-modsim-smodctrl-generic]]
-.SWRS-xxx-modsim-smodctrl-generic
+[[SWRS-058-modsim-smodctrl-generic]]
+.SWRS-058-modsim-smodctrl-generic
 --
 :srs-upstream: BRS33200-controllist, BRS33230-controlpause
 include::snippets.adoc[tag=srs-attribs]
@@ -42,8 +42,8 @@ include::snippets.adoc[tag=srs-attribs]
 
 --
 
-[[SWRS-xxx-modsim-smodctrl-pause]]
-.SWRS-xxx-modsim-smodctrl-pause
+[[SWRS-059-modsim-smodctrl-pause]]
+.SWRS-059-modsim-smodctrl-pause
 --
 :srs-upstream: BRS33230-controlpause
 include::snippets.adoc[tag=srs-attribs]
@@ -51,8 +51,8 @@ include::snippets.adoc[tag=srs-attribs]
 
 --
 
-[[SWRS-xxx-modsim-smodctrl-resume]]
-.SWRS-xxx-modsim-smodctrl-resume
+[[SWRS-060-modsim-smodctrl-resume]]
+.SWRS-060-modsim-smodctrl-resume
 --
 :srs-upstream: BRS33230-controlpause
 include::snippets.adoc[tag=srs-attribs]
@@ -63,8 +63,8 @@ include::snippets.adoc[tag=srs-attribs]
 
 ===== С1.6.4 Подмодуль уведомлений
 
-[[SWRS-xxx-modsim-smodntfy-generic]]
-.SWRS-xxx-modsim-smodntfy-generic
+[[SWRS-061-modsim-smodntfy-generic]]
+.SWRS-061-modsim-smodntfy-generic
 --
 :srs-upstream: BRS33200-controllist, BRS33220-controlnotify
 include::snippets.adoc[tag=srs-attribs]
@@ -72,8 +72,8 @@ include::snippets.adoc[tag=srs-attribs]
 
 --
 
-[[SWRS-xxx-modsim-smodntfy-basis]]
-.SWRS-xxx-modsim-smodntfy-basis
+[[SWRS-062-modsim-smodntfy-basis]]
+.SWRS-062-modsim-smodntfy-basis
 --
 :srs-upstream: BRS33220-controlnotify
 include::snippets.adoc[tag=srs-attribs]

@@ -1,7 +1,7 @@
 ===== С1.5.1 Подмодуль карты местности
 
-[[SWRS-xxx-modmap-smodmap-generic]]
-.SWRS-xxx-modmap-smodmap-generic
+[[SWRS-023-modmap-smodmap-generic]]
+.SWRS-023-modmap-smodmap-generic
 --
 :srs-upstream: BRS33100-modulemapdesc, BRS33110-mapdesc
 include::snippets.adoc[tag=srs-attribs]
@@ -9,8 +9,8 @@ include::snippets.adoc[tag=srs-attribs]
 
 --
 
-[[SWRS-xxx-modmap-smodmap-control]]
-.SWRS-xxx-modmap-smodmap-control
+[[SWRS-024-modmap-smodmap-control]]
+.SWRS-024-modmap-smodmap-control
 --
 :srs-upstream: BRS33110-mapdesc
 include::snippets.adoc[tag=srs-attribs]
@@ -22,8 +22,8 @@ include::snippets.adoc[tag=srs-attribs]
 --
 
 
-[[SWRS-xxx-modmap-smodmap-settings]]
-.SWRS-xxx-modmap-smodmap-settings
+[[SWRS-025-modmap-smodmap-settings]]
+.SWRS-025-modmap-smodmap-settings
 --
 :srs-upstream: -
 include::snippets.adoc[tag=srs-attribs]
@@ -34,8 +34,8 @@ include::snippets.adoc[tag=srs-attribs]
 ===== С1.5.2 Подмодуль колец
 
 
-[[SWRS-xxx-modmap-smodradar-generic]]
-.SWRS-xxx-modmap-smodradar-generic
+[[SWRS-026-modmap-smodradar-generic]]
+.SWRS-026-modmap-smodradar-generic
 --
 :srs-upstream: BRS33100-modulemapdesc, BRS33120-mapradarcircles
 include::snippets.adoc[tag=srs-attribs]
@@ -43,8 +43,8 @@ include::snippets.adoc[tag=srs-attribs]
 
 --
 
-[[SWRS-xxx-modmap-smodradar-types]]
-.SWRS-xxx-modmap-smodradar-types
+[[SWRS-027-modmap-smodradar-types]]
+.SWRS-027-modmap-smodradar-types
 --
 :srs-upstream: BRS33120-mapradarcircles
 include::snippets.adoc[tag=srs-attribs]
@@ -52,8 +52,8 @@ include::snippets.adoc[tag=srs-attribs]
 
 --
 
-[[SWRS-xxx-modmap-smodradar-settings1]]
-.SWRS-xxx-modmap-smodradar-settings1
+[[SWRS-028-modmap-smodradar-settings1]]
+.SWRS-028-modmap-smodradar-settings1
 --
 :srs-upstream: ADR-002-radar-circles
 include::snippets.adoc[tag=srs-attribs]
@@ -61,8 +61,8 @@ include::snippets.adoc[tag=srs-attribs]
 
 --
 
-[[SWRS-xxx-modmap-smodradar-settings1-default]]
-.SWRS-xxx-modmap-smodradar-settings1-default
+[[SWRS-028-modmap-smodradar-settings1-default]]
+.SWRS-028-modmap-smodradar-settings1-default
 --
 :srs-upstream: BRS33120-mapradarcircles
 include::snippets.adoc[tag=srs-attribs]
@@ -74,8 +74,8 @@ include::snippets.adoc[tag=srs-attribs]
 
 --
 
-[[SWRS-xxx-modmap-smodradar-settings2]]
-.SWRS-xxx-modmap-smodradar-settings2
+[[SWRS-030-modmap-smodradar-settings2]]
+.SWRS-030-modmap-smodradar-settings2
 --
 :srs-upstream: -
 include::snippets.adoc[tag=srs-attribs]
@@ -85,8 +85,8 @@ include::snippets.adoc[tag=srs-attribs]
 
 ===== С1.5.3 Подмодуль зон
 
-[[SWRS-xxx-modmap-smodzones-types]]
-.SWRS-xxx-modmap-smodzones-types
+[[SWRS-031-modmap-smodzones-types]]
+.SWRS-031-modmap-smodzones-types
 --
 :srs-upstream: BRS33100-modulemapdesc, BRS33130-mapzones
 include::snippets.adoc[tag=srs-attribs]
@@ -99,8 +99,8 @@ include::snippets.adoc[tag=srs-attribs]
 
 Описание зон обнаружения и игнорирования дано в BRS33100-modulemapdesc.
 
-[[SWRS-xxx-modmap-smodzones-settings]]
-.SWRS-xxx-modmap-smodzones-settings
+[[SWRS-032-modmap-smodzones-settings]]
+.SWRS-032-modmap-smodzones-settings
 --
 :srs-upstream: BRS33100-modulemapdesc, BRS33130-mapzones
 include::snippets.adoc[tag=srs-attribs]
@@ -110,8 +110,8 @@ include::snippets.adoc[tag=srs-attribs]
 
 ===== С1.5.4 Подмодуль объектов
 
-[[SWRS-xxx-modmap-smodobj-shape]]
-.SWRS-xxx-modmap-smodobj-shape
+[[SWRS-033-modmap-smodobj-shape]]
+.SWRS-033-modmap-smodobj-shape
 --
 :srs-upstream: BRS33100-modulemapdesc, BRS33142-objview
 include::snippets.adoc[tag=srs-attribs]
@@ -119,8 +119,8 @@ include::snippets.adoc[tag=srs-attribs]
 
 --
 
-[[SWRS-xxx-modmap-smodobj-settings]]
-.SWRS-xxx-modmap-smodobj-settings
+[[SWRS-034-modmap-smodobj-settings]]
+.SWRS-034-modmap-smodobj-settings
 --
 :srs-upstream: BRS33100-modulemapdesc, BRS33142-objview
 include::snippets.adoc[tag=srs-attribs]
@@ -128,8 +128,8 @@ include::snippets.adoc[tag=srs-attribs]
 
 --
 
-[[SWRS-xxx-modmap-smodobj-settings-limits]]
-.SWRS-xxx-modmap-smodobj-settings-limits
+[[SWRS-034-modmap-smodobj-settings-limits]]
+.SWRS-034-modmap-smodobj-settings-limits
 --
 :srs-upstream: ADR-003-objects-limits
 include::snippets.adoc[tag=srs-attribs]
@@ -137,8 +137,8 @@ include::snippets.adoc[tag=srs-attribs]
 
 --
 
-[[SWRS-xxx-modmap-smodobj-settings-limits-default]]
-.SWRS-xxx-modmap-smodobj-settings-limits-default
+[[SWRS-034-modmap-smodobj-settings-limits-default]]
+.SWRS-034-modmap-smodobj-settings-limits-default
 --
 :srs-upstream: BRS33143-objlimits
 include::snippets.adoc[tag=srs-attribs]
@@ -146,8 +146,8 @@ include::snippets.adoc[tag=srs-attribs]
 
 --
 
-[[SWRS-xxx-modmap-smodobj-objattr]]
-.SWRS-xxx-modmap-smodobj-objattr
+[[SWRS-037-modmap-smodobj-objattr]]
+.SWRS-037-modmap-smodobj-objattr
 --
 :srs-upstream: BRS33145-objattr
 include::snippets.adoc[tag=srs-attribs]
@@ -169,8 +169,8 @@ include::snippets.adoc[tag=srs-attribs]
 .Схема цветовой индикации объектов
 image::../out/src/diags/state-machine-color-obj.png[]
 
-[[SWRS-xxx-modmap-smodobj-simulation1]]
-.SWRS-xxx-modmap-smodobj-simulation1
+[[SWRS-038-modmap-smodobj-simulation1]]
+.SWRS-038-modmap-smodobj-simulation1
 --
 :srs-upstream: BRS33000-trainingmode
 include::snippets.adoc[tag=srs-attribs]
@@ -178,8 +178,8 @@ include::snippets.adoc[tag=srs-attribs]
 
 --
 
-[[SWRS-xxx-modmap-smodobj-simulation2]]
-.SWRS-xxx-modmap-smodobj-simulation2
+[[SWRS-039-modmap-smodobj-simulation2]]
+.SWRS-039-modmap-smodobj-simulation2
 --
 :srs-upstream: BRS33000-trainingmode
 include::snippets.adoc[tag=srs-attribs]
@@ -187,8 +187,8 @@ include::snippets.adoc[tag=srs-attribs]
 
 --
 
-[[SWRS-xxx-modmap-smodobj-simulation3]]
-.SWRS-xxx-modmap-smodobj-simulation3
+[[SWRS-040-modmap-smodobj-simulation3]]
+.SWRS-040-modmap-smodobj-simulation3
 --
 :srs-upstream: BRS33000-trainingmode
 include::snippets.adoc[tag=srs-attribs]
@@ -196,8 +196,8 @@ include::snippets.adoc[tag=srs-attribs]
 
 --
 
-[[SWRS-xxx-modmap-smodobj-training]]
-.SWRS-xxx-modmap-smodobj-training
+[[SWRS-041-modmap-smodobj-training]]
+.SWRS-041-modmap-smodobj-training
 --
 :srs-upstream: BRS33000-trainingmode
 include::snippets.adoc[tag=srs-attribs]
@@ -208,8 +208,8 @@ include::snippets.adoc[tag=srs-attribs]
 
 ===== С1.5.5 Подмодуль управления
 
-[[SWRS-xxx-modmap-smodctrl-controlviews]]
-.SWRS-xxx-modmap-smodctrl-controlviews
+[[SWRS-042-modmap-smodctrl-controlviews]]
+.SWRS-042-modmap-smodctrl-controlviews
 --
 :srs-upstream: BRS33250-controlviews
 include::snippets.adoc[tag=srs-attribs]
@@ -217,8 +217,8 @@ include::snippets.adoc[tag=srs-attribs]
 
 --
 
-[[SWRS-xxx-modmap-smodctrl-controlviews-home]]
-.SWRS-xxx-modmap-smodctrl-controlviews-home
+[[SWRS-042-modmap-smodctrl-controlviews-home]]
+.SWRS-042-modmap-smodctrl-controlviews-home
 --
 :srs-upstream: BRS33250-controlviews
 include::snippets.adoc[tag=srs-attribs]
@@ -226,8 +226,8 @@ include::snippets.adoc[tag=srs-attribs]
 
 --
 
-[[SWRS-xxx-modmap-smodctrl-controlcompass]]
-.SWRS-xxx-modmap-smodctrl-controlcompass
+[[SWRS-044-modmap-smodctrl-controlcompass]]
+.SWRS-044-modmap-smodctrl-controlcompass
 --
 :srs-upstream: BRS33260-controlcompass
 include::snippets.adoc[tag=srs-attribs]
@@ -235,8 +235,8 @@ include::snippets.adoc[tag=srs-attribs]
 
 --
 
-[[SWRS-xxx-modmap-smodctrl-controlcompass-interact]]
-.SWRS-xxx-modmap-smodctrl-controlcompass-interact
+[[SWRS-044-modmap-smodctrl-controlcompass-interact]]
+.SWRS-044-modmap-smodctrl-controlcompass-interact
 --
 :srs-upstream: BRS33260-controlcompass
 include::snippets.adoc[tag=srs-attribs]
@@ -247,8 +247,8 @@ include::snippets.adoc[tag=srs-attribs]
 
 ===== С1.5.6 Подмодуль даты/времени
 
-[[SWRS-xxx-modmap-smoddate]]
-.SWRS-xxx-modmap-smoddate
+[[SWRS-046-modmap-smoddate]]
+.SWRS-046-modmap-smoddate
 --
 :srs-upstream: BRS33240-controldate
 include::snippets.adoc[tag=srs-attribs]

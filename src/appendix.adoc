@@ -291,7 +291,7 @@ include::snippets.adoc[tag="brs-attribs"]
 | BRS | SRS/SWRS
 
 | BRS31100-listfunc
-| SWRS-xxx-modevent-generic, SRS-001-containers-gui, SRS-002-containers-db
+| SWRS-022-modevent-generic, SRS-001-containers-gui, SRS-002-containers-db
 
 | BRS32100-auth
 | SRS-002-containers-db, SRS-003-cont-gui-auth, SRS-006-cont-db-data
@@ -300,58 +300,58 @@ include::snippets.adoc[tag="brs-attribs"]
 | SRS-001-containers-gui, SRS-002-containers-db, SRS-004-cont-gui-mainmenu, SRS-005-cont-gui-modes, SRS-006-cont-db-data
 
 | BRS33000-trainingmode
-| SWRS-xxx-modmap-smodobj-simulation1, SWRS-xxx-modmap-smodobj-simulation2, SWRS-xxx-modmap-smodobj-simulation3, SWRS-xxx-modmap-smodobj-training, SWRS-xxx-modsim-smodgen-startup
+| SWRS-038-modmap-smodobj-simulation1, SWRS-039-modmap-smodobj-simulation2, SWRS-040-modmap-smodobj-simulation3, SWRS-041-modmap-smodobj-training, SWRS-047-modsim-smodgen-startup
 
 | BRS33100-modulemapdesc
-| SWRS-xxx-modmap-smodmap-generic, SWRS-xxx-modmap-smodradar-generic, SWRS-xxx-modmap-smodzones-types, SWRS-xxx-modmap-smodzones-settings, SWRS-xxx-modmap-smodobj-shape, SWRS-xxx-modmap-smodobj-settings
+| SWRS-023-modmap-smodmap-generic, SWRS-026-modmap-smodradar-generic, SWRS-031-modmap-smodzones-types, SWRS-032-modmap-smodzones-settings, SWRS-033-modmap-smodobj-shape, SWRS-034-modmap-smodobj-settings
 
 | BRS33110-mapdesc
-| SWRS-xxx-modmap-smodmap-generic, SWRS-xxx-modmap-smodmap-control
+| SWRS-023-modmap-smodmap-generic, SWRS-024-modmap-smodmap-control
 
 | BRS33120-mapradarcircles
-| SWRS-xxx-modmap-smodradar-generic, SWRS-xxx-modmap-smodradar-types, SWRS-xxx-modmap-smodradar-settings1-default
+| SWRS-026-modmap-smodradar-generic, SWRS-027-modmap-smodradar-types, SWRS-028-modmap-smodradar-settings1-default
 
 | BRS33130-mapzones
-| SWRS-xxx-modmap-smodzones-types, SWRS-xxx-modmap-smodzones-settings
+| SWRS-031-modmap-smodzones-types, SWRS-032-modmap-smodzones-settings
 
 | BRS33141-objstartup
-| SWRS-xxx-modsim-smodgen-startup
+| SWRS-047-modsim-smodgen-startup
 
 | BRS33142-objview
-| SWRS-xxx-modmap-smodobj-shape, SWRS-xxx-modmap-smodobj-settings, SWRS-xxx-modmap-smodobj-settings-limits-default
+| SWRS-033-modmap-smodobj-shape, SWRS-034-modmap-smodobj-settings, SWRS-034-modmap-smodobj-settings-limits-default
 
 | BRS33143-objlimits
-| SWRS-xxx-modmap-smodobj-settings-limits-default
+| SWRS-034-modmap-smodobj-settings-limits-default
 
 | BRS33144-objtypes
-| SWRS-xxx-modsim-smodgen-types
+| SWRS-048-modsim-smodgen-types
 
 | BRS33145-objattr
-| SWRS-xxx-modmap-smodobj-objattr
+| SWRS-037-modmap-smodobj-objattr
 
 | BRS33200-controllist
-| SWRS-xxx-modsim-smodset-generic, SWRS-xxx-modsim-smodset-basis, SWRS-xxx-modsim-smodctrl-generic, SWRS-xxx-modsim-smodntfy-generic
+| SWRS-056-modsim-smodset-generic, SWRS-057-modsim-smodset-basis, SWRS-058-modsim-smodctrl-generic, SWRS-061-modsim-smodntfy-generic
 
 | BRS33210-controlsettings
-| SWRS-xxx-modsim-smodset-generic, SWRS-xxx-modsim-smodset-basis
+| SWRS-056-modsim-smodset-generic, SWRS-057-modsim-smodset-basis
 
 | BRS33220-controlnotify
-| SWRS-xxx-modsim-smodntfy-generic, SWRS-xxx-modsim-smodntfy-basis
+| SWRS-061-modsim-smodntfy-generic, SWRS-062-modsim-smodntfy-basis
 
 | BRS33230-controlpause
-| SWRS-xxx-modsim-smodctrl-generic, SWRS-xxx-modsim-smodctrl-pause, SWRS-xxx-modsim-smodctrl-resume
+| SWRS-058-modsim-smodctrl-generic, SWRS-059-modsim-smodctrl-pause, SWRS-060-modsim-smodctrl-resume
 
 | BRS33240-controldate
-| SWRS-xxx-modmap-smoddate
+| SWRS-046-modmap-smoddate
 
 | BRS33250-controlviews
-| SWRS-xxx-modmap-smodctrl-controlviews, SWRS-xxx-modmap-smodctrl-controlviews-home
+| SWRS-042-modmap-smodctrl-controlviews, SWRS-042-modmap-smodctrl-controlviews-home
 
 | BRS33260-controlcompass
-| SWRS-xxx-modmap-smodctrl-controlcompass, SWRS-xxx-modmap-smodctrl-controlcompass-interact
+| SWRS-044-modmap-smodctrl-controlcompass, SWRS-044-modmap-smodctrl-controlcompass-interact
 
 | BRS33300-auth
-| SWRS-xxx-modauth-startup-sw, SWRS-xxx-modauth-login-pwd, SRS-006-cont-db-data
+| SWRS-004-modauth-startup-sw, SWRS-005-modauth-login-pwd, SRS-006-cont-db-data
 
 
 |===

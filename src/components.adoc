@@ -35,8 +35,8 @@ image::../out/src/diags/c1-components.png[]
 
 ==== С1.1. Модуль авторизации
 
-[[SWRS-xxx-modauth-startup-sw]]
-.SWRS-xxx-modauth-startup-sw
+[[SWRS-004-modauth-startup-sw]]
+.SWRS-004-modauth-startup-sw
 --
 :srs-upstream: BRS33300-auth
 include::snippets.adoc[tag=srs-attribs]
@@ -44,8 +44,8 @@ include::snippets.adoc[tag=srs-attribs]
 
 --
 
-[[SWRS-xxx-modauth-login-pwd]]
-.SWRS-xxx-modauth-login-pwd
+[[SWRS-005-modauth-login-pwd]]
+.SWRS-005-modauth-login-pwd
 --
 :srs-upstream: BRS33300-auth
 include::snippets.adoc[tag=srs-attribs]
@@ -53,16 +53,16 @@ include::snippets.adoc[tag=srs-attribs]
 
 --
 
-[[SWRS-xxx-modauth-unsuccess-notify]]
-.SWRS-xxx-modauth-unsuccess-notify
+[[SWRS-006-modauth-unsuccess-notify]]
+.SWRS-006-modauth-unsuccess-notify
 --
 include::snippets.adoc[tag=srs-attribs]
 Модуль авторизации должен выводить сообщение об ошибке в случае неверно введенной пары логин-пароль.
 
 --
 
-[[SWRS-xxx-modauth-unsuccess-process]]
-.SWRS-xxx-modauth-unsuccess-process
+[[SWRS-007-modauth-unsuccess-process]]
+.SWRS-007-modauth-unsuccess-process
 --
 include::snippets.adoc[tag=srs-attribs]
 Модуль авторизации должен продолжать запрашивать пару логин-пароль в случае неверно введенной пары логин-пароль.
@@ -70,16 +70,16 @@ include::snippets.adoc[tag=srs-attribs]
 --
 
 
-[[SWRS-xxx-modauth-success-process]]
-.SWRS-xxx-modauth-success-process
+[[SWRS-008-modauth-success-process]]
+.SWRS-008-modauth-success-process
 --
 include::snippets.adoc[tag=srs-attribs]
 Модуль авторизации должен передать управление модулю главного меню в случае верно введенной пары логин-пароль.
 
 --
 
-[[SWRS-xxx-modauth-first-admin]]
-.SWRS-xxx-modauth-first-admin
+[[SWRS-009-modauth-first-admin]]
+.SWRS-009-modauth-first-admin
 --
 :srs-upstream: ADR-001-first-admin
 include::snippets.adoc[tag=srs-attribs]
@@ -89,8 +89,8 @@ include::snippets.adoc[tag=srs-attribs]
 
 ==== С1.2. Модуль профиля
 
-[[SWRS-xxx-modaccount-info]]
-.SWRS-xxx-modaccount-info
+[[SWRS-010-modaccount-info]]
+.SWRS-010-modaccount-info
 --
 :srs-upstream: SRS-006-cont-db-data
 include::snippets.adoc[tag=srs-attribs]
@@ -98,7 +98,7 @@ include::snippets.adoc[tag=srs-attribs]
 
 --
 
-[[SWRS-xxx-modaccount-histoy]]
+[[SWRS-011-modaccount-histoy]]
 .SWRS-xxx-modaccount-history
 --
 :srs-upstream: SRS-006-cont-db-data
@@ -107,8 +107,8 @@ include::snippets.adoc[tag=srs-attribs]
 
 --
 
-[[SWRS-xxx-modaccount-pwd]]
-.SWRS-xxx-modaccount-pwd
+[[SWRS-012-modaccount-pwd]]
+.SWRS-012-modaccount-pwd
 --
 :srs-upstream: SRS-006-cont-db-data
 include::snippets.adoc[tag=srs-attribs]
@@ -116,8 +116,8 @@ include::snippets.adoc[tag=srs-attribs]
 
 --
 
-[[SWRS-xxx-modaccount-logout]]
-.SWRS-xxx-modaccount-logout
+[[SWRS-013-modaccount-logout]]
+.SWRS-013-modaccount-logout
 --
 :srs-upstream: SRS-006-cont-db-data
 include::snippets.adoc[tag=srs-attribs]
@@ -125,8 +125,8 @@ include::snippets.adoc[tag=srs-attribs]
 
 --
 
-[[SWRS-xxx-modaccount-logout-process]]
-.SWRS-xxx-modaccount-logout-process
+[[SWRS-013-modaccount-logout-process]]
+.SWRS-013-modaccount-logout-process
 --
 :srs-upstream: SRS-006-cont-db-data
 include::snippets.adoc[tag=srs-attribs]
@@ -136,8 +136,8 @@ include::snippets.adoc[tag=srs-attribs]
 
 ==== С1.3. Модуль настроек
 
-[[SWRS-xxx-modsettings-basic]]
-.SWRS-xxx-modsettings-basic
+[[SWRS-015-modsettings-basic]]
+.SWRS-015-modsettings-basic
 --
 :srs-upstream: SRS-006-cont-db-data
 include::snippets.adoc[tag=srs-attribs]
@@ -145,8 +145,8 @@ include::snippets.adoc[tag=srs-attribs]
 
 --
 
-[[SWRS-xxx-modsettings-accounts]]
-.SWRS-xxx-modsettings-accounts
+[[SWRS-016-modsettings-accounts]]
+.SWRS-016-modsettings-accounts
 --
 :srs-upstream: SRS-006-cont-db-data
 include::snippets.adoc[tag=srs-attribs]
@@ -155,8 +155,8 @@ include::snippets.adoc[tag=srs-attribs]
 --
 
 
-[[SWRS-xxx-modsettings-db]]
-.SWRS-xxx-modsettings-db
+[[SWRS-017-modsettings-db]]
+.SWRS-017-modsettings-db
 --
 :srs-upstream: SRS-006-cont-db-data
 include::snippets.adoc[tag=srs-attribs]
@@ -166,8 +166,8 @@ include::snippets.adoc[tag=srs-attribs]
 
 ==== С1.4. Модуль истории
 
-[[SWRS-xxx-modhistory-list]]
-.SWRS-xxx-modhistory-list
+[[SWRS-018-modhistory-list]]
+.SWRS-018-modhistory-list
 --
 :srs-upstream: SRS-006-cont-db-data
 include::snippets.adoc[tag=srs-attribs]
@@ -175,8 +175,8 @@ include::snippets.adoc[tag=srs-attribs]
 
 --
 
-[[SWRS-xxx-modhistory-details]]
-.SWRS-xxx-modhistory-details
+[[SWRS-019-modhistory-details]]
+.SWRS-019-modhistory-details
 --
 :srs-upstream: SRS-006-cont-db-data
 include::snippets.adoc[tag=srs-attribs]
@@ -203,8 +203,8 @@ include::components-c16.adoc[]
 ==== С1.7 Модуль главного меню
 
 
-[[SWRS-xxx-modmainmenu-control]]
-.SWRS-xxx-modmainmenu-control
+[[SWRS-020-modmainmenu-control]]
+.SWRS-020-modmainmenu-control
 --
 :srs-upstream: SRS-005-cont-gui-modes
 include::snippets.adoc[tag=srs-attribs]
@@ -216,8 +216,8 @@ include::snippets.adoc[tag=srs-attribs]
 
 --
 
-[[SWRS-xxx-modmainmenu-process]]
-.SWRS-xxx-modmainmenu-process
+[[SWRS-021-modmainmenu-process]]
+.SWRS-021-modmainmenu-process
 --
 :srs-upstream: SRS-005-cont-gui-modes
 include::snippets.adoc[tag=srs-attribs]
@@ -227,8 +227,8 @@ include::snippets.adoc[tag=srs-attribs]
 
 ==== С1.8 Модуль событий
 
-[[SWRS-xxx-modevent-generic]]
-.SWRS-xxx-modevent-generic
+[[SWRS-022-modevent-generic]]
+.SWRS-022-modevent-generic
 --
 :srs-upstream: BRS31100-listfunc
 include::snippets.adoc[tag=srs-attribs]

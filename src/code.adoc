@@ -1,7 +1,7 @@
 === База данных
 
-[[SWRS-xxx-db-accounts]]
-.SWRS-xxx-db-accounts
+[[SWRS-000-db-accounts]]
+.SWRS-000-db-accounts
 --
 :srs-upstream: SRS-006-cont-db-data
 include::snippets.adoc[tag=srs-attribs]
@@ -22,8 +22,8 @@ include::snippets.adoc[tag=srs-attribs]
 
 Поле "details_json" содержит детализированную информацию о пользователе.
 
-[[SWRS-xxx-db-history]]
-.SWRS-xxx-db-history
+[[SWRS-001-db-history]]
+.SWRS-001-db-history
 --
 :srs-upstream: SRS-006-cont-db-data
 include::snippets.adoc[tag=srs-attribs]
@@ -38,8 +38,8 @@ include::snippets.adoc[tag=srs-attribs]
 
 Поле "details_json" содержит детализированную информацию о тренировке.
 
-[[SWRS-xxx-db-settings]]
-.SWRS-xxx-db-settings
+[[SWRS-002-db-settings]]
+.SWRS-002-db-settings
 --
 :srs-upstream: SRS-006-cont-db-data
 include::snippets.adoc[tag=srs-attribs]
@@ -54,8 +54,8 @@ include::snippets.adoc[tag=srs-attribs]
 
 WARNING: TBD
 
-[[SWRS-xxx-db-events]]
-.SWRS-xxx-db-events
+[[SWRS-003-db-events]]
+.SWRS-003-db-events
 --
 :srs-upstream: SRS-006-cont-db-data
 include::snippets.adoc[tag=srs-attribs]
